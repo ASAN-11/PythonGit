@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <link rel="shortcut icon" type="img/png" href="pygit.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PythonGit - Compiler</title>
+    <title>PythonGit - HTML Editor</title>
+    <script type="text/javascript">
+        function myTry()
+        {
+            var code = document.getElementById("editor").value;
+
+            document.getElementById("browser").innerHTML = code;
+        }
+    </script>
 </head>
 <body>
-    
+   <div class="main">
+    <div class="header"><div><font color="white">Python</font><font color="green">Git</font> x <font color="red">R</font><font color="white">iddler</font></div></div>
+    <div class="menu">
+        <h1>Tryit Editor 1.O</h1>
+        <input type="button" value="RUN" onclick="myTry()"/>
+    </div>
+    <div class="content">
+        <div id="browser"></div>
+        <textarea id="editor">
+        </textarea>
+    </div>
+   </div>
 </body>
 </html>

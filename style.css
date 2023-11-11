@@ -1,4 +1,217 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section{
+    background-image: url(PYBG.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#menu{
+    color: white;
+    display: flex;
+    z-index: 1000;
+    background-color: #242424;
+}
+.leftmenu{
+    padding: 16px 0px;
+    margin: 0px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+}
+.rightmenu{
+    padding: 32px 0px;
+    margin-left: 1016px;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(219, 219, 219);
+}
+.rightmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.15rem;
+    font-weight:bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.rightmenu ul a{
+    text-decoration: none;
+    color: rgb(46, 250, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.rightmenu ul li::after{
+    content: '';
+    width:0;
+    height:2px;
+    background: rgb(255, 240, 240);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+ }
+ .rightmenu ul li:hover::after{
+     
+    width: 100%;
+ }
+
+ #issues::after{
+    content: '';
+    width:100%;
+    height:2px;
+    background: rgb(255, 240, 240);
+    display: block;
+    margin: auto;
+ }
+
+ .queries{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .riddles{
+    width: 80%;
+    height: 250px;
+    background-color: rgb(53, 52, 52);
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+ }
+
+ .riddles h2{
+    font-size: 20px;
+    color: #00ff11;
+ }
+
+ .riddles .user p{
+    font-size: 12px;
+    color: #8b8b8b;
+ }
+
+ .riddles .content p{
+    font-size: 18px;
+    color: #ffffff;
+ }
+
+ .riddles .content .answer{
+    font-size: 18px;
+    color: #ffffff;
+ }
+
+ .riddles .content span{
+    font-size: 17px;
+    color: #79f17d;
+ }
+
+ @media (max-width: 650px){
+    .riddles{
+        height: 400px;
+    }
+ }
+
+
+@media (max-width: 450px){
+
+    .section{
+        width: 100%;
+        height: 300vh;
+    }
+
+    #menu{
+        padding-bottom: 0vh;
+    }
+
+     #menu .rightmenu{
+         display: none;
+     }
 
 }
+
+@media (max-width: 1035px){
+
+     #menu .rightmenu{
+         display: none;
+     }
+}
+
+
+@media (max-width: 1499px){
+
+     #menu .rightmenu{
+         display: none;
+     }
+
+}
+
+@media (min-width: 1601px){
+
+    .rightmenu{
+        margin-left: 1093px;
+    }
+
+}
+
+@media (min-width: 1701px){
+
+    .rightmenu{
+        margin-left: 1183px;
+    }
+
+}
+
+@media (min-width: 1801px){
+
+    .rightmenu{
+        margin-left: 1253px;
+    }
+
+}
+
+@media (min-width: 1901px){
+
+    .rightmenu{
+        margin-left: 1299px;
+    }
+
+}
+@media (max-width: 450px){
+
+}
+
+
+@media (max-width: 450px){
+
+    .section{
+        width: 100%;
+        height: 300vh;
+    }
+
+    #menu{
+        padding-bottom: 0vh;
+    }
+
+     #menu .rightmenu{
+         display: none;
+     }
+    }
