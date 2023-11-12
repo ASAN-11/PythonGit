@@ -77,6 +77,24 @@ body{
     margin: auto;
  }
 
+ .search{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #242424;
+    padding: 31px 15px;
+ }
+
+ .search select{
+    width: 600px;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 2px 8px;
+ }
+
  .queries{
     margin-top: 50px;
     justify-content: center;
@@ -123,10 +141,53 @@ body{
     font-size: 17px;
     color: #79f17d;
  }
+ footer{
+    height: 90px;
+    background-color: #000;
+  }
+ 
+  footer #foothead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+ 
+  footer .foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+  }
+ 
+  footer .medias{
+    color: #fff;
+    padding-right: 28px;
+  }
+ 
+ .medias a{
+    color: #ffffff;
+    text-decoration: none;
+ }
+ 
+  .medias .fa{
+     font-size: 20px;
+     padding-left: 18px;
+  }
+
+  
 
  @media (max-width: 650px){
     .riddles{
         height: 400px;
+    }
+
+    .search select{
+        width: 400px;
     }
  }
 
@@ -195,10 +256,6 @@ body{
     }
 
 }
-@media (max-width: 450px){
-
-}
-
 
 @media (max-width: 450px){
 
@@ -214,4 +271,29 @@ body{
      #menu .rightmenu{
          display: none;
      }
+
+    .search select{
+        width: 260px;
+    }
+
+    footer .foot{
+        font-size: 30px;
+    }
+    }
+
+    @media (max-width: 380px){
+        footer .foot{
+            font-size: 20px;
+            padding-left: 17px;
+        }
+
+        .medias .fa{
+            font-size: 13px;
+            padding-left: 13px;
+         }
+
+         footer{
+            height: 70px;
+         }
+
     }

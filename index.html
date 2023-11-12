@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="img/png" href="pygit.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PythonGit - Your Python Interface</title>
 </head>
@@ -27,8 +28,17 @@
             </ul>
         </div>
       </div>
+      <div class="search">
+        <h1 style="color: green;">Have Fun with ultimate Interface for Python!</h1>
+        <h3 style="color: #00ff11;">Search the required and have your work done.</h3>
+        <select name="snippets" id="list" onchange="myAnchor(this.value)">
+          <option value="print_command">Print Command
+          <option value="for_loop">For Loop
+          <option value="nov2023_update">HTML Editor
+          </select>
+      </div>
     <div class="queries">
-      <div class="riddles">
+      <div class="riddles" id="print_command">
         <div class="user"><h2>Print Command</h2><p>Published: 25-10-2023 18:37 PM IST</p></div>
         <div class="content"><p>How can I print a string in Python?</p>
         <br>
@@ -36,7 +46,7 @@
         <span>print("Hello, World!")</span>
         </div>
       </div>
-      <div class="riddles">
+      <div class="riddles" id="for_loop">
         <div class="user"><h2>For Loop</h2><p>Published: 25-10-2023 18:37 PM IST</p></div>
         <div class="content"><p>How to perform FOR loop in Python?</p>
         <br>
@@ -46,7 +56,7 @@
               print(x)</span>
     </div>
       </div>
-      <div class="riddles" style="background-color: green;">
+      <div class="riddles" style="background-color: green;" id="nov2023_update">
         <div class="user"><h2><font color="white">PythonGit x Riddler</font></h2><p style="color: white;">New Update: November 2023</p></div>
         <div class="content"><p>New HTML Editor in corporation with Riddler has been introduced in our website!</p>
         <br>
@@ -56,5 +66,22 @@
       </div>
     </div>
 </div>
+<footer>
+  <div id="foothead">
+  <div class="foot">
+  <font color="white">Python</font><font color="green">Git</font></div>
+  <div class="medias">
+      <a href="https://github.com/ASAN-11"><i class="fa fa-github"></i></a>
+      <a href="#"></a><i class="fa fa-codepen"></i></a>
+      <a href="#"></a><i class="fa fa-linkedin"></i></a>
+      <a href="#"></a><i class="fa fa-youtube-play"></i></a>
+  </div></div>
+<script>
+ function myAnchor(value){
+  var top = document.getElementById(value).offsetTop;
+  window.scrollTo(0, top);
+	//document.getElementById(value).scrollIntoView();
+}
+</script>
 </body>
 </html>
